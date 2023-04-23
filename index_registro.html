@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Registro de usuario</title>
+</head>
+<body>
+    <h1>Bienvenido al formulario de registro de tu banco en linea</h1>
+    <div class="container_registro_menu">
+        <button class="button_registro"><a href="index_ingresar.html" class="link_registro">Ingresar</a></button>
+        <button class="button_registro"><a href="index_bienvenida.html" class="link_registro">Home</a></button>
+    </div>
+    <form action="">
+        <div class="container_registro">
+            <div class="container_registro_completo">
+                <div class="container_registro_usuario">
+                    <label class="label_registro_usuario">Ingresa nombre de usuario o email
+                        <br><br><input type="text" name="nombre" class="informacion_registro_usuario" maxlength="50" minlength="8" placeholder="Jhon_Hanckock12345" required>
+                    </label>
+                </div>
+                <div class="container_registro_usuario">
+                    <label class="label_registro_usuario">Ingresa password de 8 caracteres como minimo
+                        <br><br><input type="password" name="password" class="informacion_registro_usuario" maxlength="20" minlength="8" placeholder="Abc123#%&7890" required>
+                    </label>
+                </div>
+                <div class="container_registro_usuario">
+                    <label class="label_registro_usuario">Al registrarte aceptas nuestros terminos y condiciones
+                        <br><br><input type="submit" class="button_registro_usuario" value="Registrarse" onclick="suscribirse()">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html> 

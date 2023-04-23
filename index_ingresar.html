@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Inicia sesion</title>
+</head>
+<body>
+    <h1>Bienvenido al formulario para iniciar sesion de tu banco en linea</h1>
+    <div class="container_ingresar_menu">
+        <button class="button_ingresar" onclick="ingresar.html"><a href="index_registro.html" class="link_ingresar">Registro</a></button>
+        <button class="button_ingresar"><a href="index_bienvenida.html" class="link_ingresar">Home</a></button>
+    </div>
+    <form action="">
+        <div class="container_ingresar">
+            <div class="container_ingresar_completo">
+                <div class="container_ingresar_usuario">
+                    <label class="label_ingresar_usuario">Nombre de usuario o email
+                        <br><br><input type="text" name="nombre" class="informacion_ingresar_usuario" maxlength="50" minlength="8" placeholder="Jhon_Hanckock12345" required>
+                    </label>
+                </div>
+                <div class="container_ingresar_usuario">
+                    <label class="label_ingresar_usuario">Password
+                        <br><br><input type="password" name="password" class="informacion_ingresar_usuario" maxlength="20" minlength="8" placeholder="Abc123#%&7890" required>
+                    </label>
+                </div>
+                <div class="container_ingresar_usuario">
+                    <label class="label_registro_usuario"> Al iniciar sesion aceptas nuestros terminos y condiciones
+                        <br><br><input type="submit" class="button_ingresar_usuario" value="Ingresar" onclick="ingresar()">
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html> 

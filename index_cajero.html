@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Cajero Automatico</title>
+</head>
+<body>
+    <h1>Bienvenidos a su banco en linea</h1>
+    <div class="container_cajero_menu">
+        <button class="button_cajero"><a href="index_registro.html" class="link_cajero">Registro</a></button>
+        <button class="button_cajero"><a href="index_bienvenida.html" class="link_cajero">Home</a></button>
+        <button class="button_cajero"><a href="index_ingresar.html" class="link_cajero">Ingresar</a></button>
+        </div>
+    <div class="container_cajero">
+        <div class="container_cajero_completo">
+            <div class="container_cajero_operaciones_completo">
+                <p id="fondo_actual">Actualmente tienes: 0.0</p>
+                <div class="container_cajero_operaciones">
+                    <input id="cantidad" />
+                    <div class="container_cajero_dep_ret">
+                        <button class="dep_ret" onclick="depositar()">Depositar</button>
+                        <button class="dep_ret" onclick="retirar()">Retirar</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="container_cajero_keypad">
+                <button id="1" onclick="uno()">1</button>
+                <button id="2" onclick="dos()">2</button>
+                <button id="3" onclick="tres()">3</button>
+                <button id="4" onclick="cuatro()">4</button>
+                <button id="5" onclick="cinco()">5</button>
+                <button id="6" onclick="seis()">6</button>
+                <button id="7" onclick="siete()">7</button>
+                <button id="8" onclick="ocho()">8</button>
+                <button id="9" onclick="nueve()">9</button>
+                <button id="0" onclick="cero()">0</button>
+                <button id="corregir" onclick="corregir()">Corregir</button>
+                <button id="borrar" onclick="borrar()">Borrar</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
